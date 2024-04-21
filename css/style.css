@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#tittle {
+    display: flex;
+    align-items: center;
+    padding: .5em 2em;
+    gap: 1.5em;
+    font-size: larger;
+}
+
+#controls {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #fff;
+    gap: 20px;
+    width: 100%;
+}
+
+#search-input-container {
+    display: flex;
+    font-size: 1.2em;
+}
+
+#value-selector {
+    margin-left: .5em;
+    border: 1px solid #333;
+    font-size: .9em;
+    padding: 2px 5px;
+    border-radius: 7px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #a0cde7;
+}
+
+#search-input {
+    border: 1px solid #333;
+    border-left: none;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-size: .9em;
+    background-color: #A0E7E5;
+    padding: 0 7px;
+}
+
+#btns-container {
+    display: flex;
+    gap: 15px;
+}
+
+#btns-container button {
+    padding: 3px 15px;
+    font-size: large;
+    background-color: #a0cde7;;
+    border-radius: 7px;
+    border: 1px solid #333;
+}
+
+/* Tabla de informacion */
+
+#control-books {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 1em;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: 9% 20% 16% 10% 25% 10% 10%;
+    grid-template-areas: 'g a b c d e f';
+    text-align: justify;
+    text-indent: .5em;
+}
+
+th {
+    background-color: #a0cde7;
+    border-right: 1px solid black;
+    padding: 7px 0;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+}
+
+th button {
+    margin-right: 5px;
+}
+
+td {
+    border-right: 1px solid black;
+    padding: 7px 5px;
+    font-size: large;
+    overflow-x: auto;
+}
+
+.book-name {
+    grid-area: a;
+}
+
+.author {
+    grid-area: b;
+}
+
+.state {
+    grid-area: c;
+}
+
+.user {
+    grid-area: d;
+}
+
+.out-date {
+    grid-area: e;
+}
+
+.in-date {
+    grid-area: f;
+    border: none;
+}
+
+.tr-green {
+    background-color: #fff;
+}
+
+.tr-pink {
+    background-color: #ddd;
+}
+
+dialog {
+    gap: 20px;
+    margin: auto;
+    padding: 55px;
+    position: relative;
+
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(10px);
+}
+
+#data {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: larger;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#input-dialog {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: larger;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#user-input, #add-book-name, #add-book-author {
+    font-size: larger;
+}
+
+#borrow, #return, 
+#add-dialog-btn, #cancel-dialog-btn {
+    display: block;
+    width: 100%;
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    border: 1px solid #333;
+    background-color: #ddd;
+}
+
+#cancel-btn, #add-book-cancel-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    font-size: larger;
+    font-weight: bolder;
+    background: none;
+    border: none;
+}
+

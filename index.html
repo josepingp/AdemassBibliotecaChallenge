@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aplicacion administrativa de biblioteca municipal realizada como desafio para la plataforma ademass">
+    <meta name="keywords" content="libros, literatura, desafio, ademass, cursos, aprender">
+    <meta name="author" content="Jose Luis.G.P">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/img/pngwing.com (2).png" type="image/x-icon">
+
+    <title>Mi Biblioteca</title>
+
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <section id="tittle">
+            <img src="assets/img/libro.png" alt="logo" width="50">
+            <h1>Biblioteca</h1>
+        </section>
+
+    </header>
+
+    <main>
+        <section id="controls">
+            <article id="search-input-container">
+                <p>Buscar por: </p>
+                <select name="value-selector" id="value-selector">
+                    <option value="book-name">Nombre</option>
+                    <option value="author">Autor</option>
+                </select>
+                <input type="text" name="search-input" id="search-input">
+            </article>
+            <article id="btns-container">
+                <button id="add-book-btn">Añadir libro</button>
+            </article>
+            <dialog id="add-book-dialog" >
+                    <section id="input-dialog">
+                    <label for="add-book-name">Nombre del libro</label>
+                    <input type="text" id="add-book-name">
+                    <label for="add-book-author">Autor</label>
+                    <input type="text" id="add-book-author">
+                </section>
+                <section id="dialog-menu">
+                    <button id="add-dialog-btn">Añadir</button>
+                    <button id="cancel-dialog-btn">Cancelar</button>
+                    <button id="add-book-cancel-btn">X</button>
+                </section>
+        </section>
+
+        <section id="control-books">
+            <table>
+                <tr>
+                    <th class="book-ref">
+                        Ref
+                    </th>
+                    <th class="book-name">
+                        Nombre
+                    </th>
+                    <th class="author">
+                        Autor
+                    </th>
+                    <th class="state">
+                        Estado
+                    </th>
+                    <th class="user">
+                        Usuario
+                    </th>
+                    <th class="out-date">
+                        F.Salida
+                    </th>
+                    <th class="in-date">
+                        F.Entrega
+                    </th>
+                </tr>
+                <tbody id="table-info">
+
+                </tbody>
+            </table>
+            <dialog id="menu-dialog" >
+                
+                    <section id="data">
+                        <p id="d-book-ref"></p>
+                        <p id="d-book-name"></p>
+                        <p id="d-author"></p>
+                        <p id="d-state"></p>
+                        <p id="d-user"></p>
+                        <p id="d-out-date"></p>
+                        <p id="d-in-date"></p>
+                    </section>
+                    <section id="input-dialog">
+                        <label for="user-input">Nombre de usuario</label>
+                        <input type="text" id="user-input">
+                    </section>
+                    <section id="dialog-menu">
+                        <button id="borrow">Prestar</button>
+                        <button id="return">Devolver</button>
+                        <button id="cancel-btn">X</button>
+                    </section>
+
+            </dialog>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
