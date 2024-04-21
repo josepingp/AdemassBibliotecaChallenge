@@ -81,6 +81,10 @@ tr {
     text-indent: .5em;
 }
 
+#table-info tr:hover {
+    border: 2px solid black;
+}
+
 th {
     background-color: #a0cde7;
     border-right: 1px solid black;
