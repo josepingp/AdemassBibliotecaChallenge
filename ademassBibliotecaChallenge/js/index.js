@@ -514,6 +514,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dialog = document.getElementById('menu-dialog');
     const addBookDialog = document.getElementById('add-book-dialog');
     const addBookBtnDialog = document.getElementById('add-book-btn')
+    const cancelAddBookBtnDialog = document.getElementById('cancel-dialog-btn"')
     const myBiblbioteca = new Biblioteca([], []);
 
     for (const libro of libros) {
@@ -566,8 +567,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
     
-    addBookcancelBtn.addEventListener('click', () => addBookDialog.close());
+    cancelAddBookBtnDialog.addEventListener('click', () =>{
+        const bookName = document.getElementById('add-book-name');
+        const bookAuthor = document.getElementById('add-book-author');
 
+            addBookDialog.close();
+            bookName.value = '';
+            bookAuthor.value = '';
+    })
+    addBookcancelBtn.addEventListener('click', () =>{
+        const bookName = document.getElementById('add-book-name');
+        const bookAuthor = document.getElementById('add-book-author');
+
+            addBookDialog.close();
+            bookName.value = '';
+            bookAuthor.value = '';
+    })
 
 })
 
